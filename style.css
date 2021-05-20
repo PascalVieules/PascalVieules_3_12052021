@@ -1,6 +1,31 @@
+/* Polices page */
+@font-face {}
+/* Couleurs de la Page */
 .logo {
   display: block;
   margin: 10px auto;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 50px;
+  background-color: #d3d1d1;
+  border-radius: 20px;
+}
+#search .searchfield {
+  border-style: none;
+  margin-left: 5px;
+  background-color: #d3d1d1;
+  font-weight: bold;
+  color: #000;
+}
+#search .mapmarker {
+  margin-left: 45%;
+  margin-right: 0;
 }
 
 /*
@@ -12,8 +37,12 @@
 }*/
 @media only screen and (max-width: 1024px) {
   .logo {
-    width: 35%;
-    height: 35%;
+    width: 50%;
+    height: 50%;
+  }
+
+  #search {
+    border-radius: 0;
   }
 }
 
