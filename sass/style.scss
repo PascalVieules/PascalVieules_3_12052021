@@ -1,22 +1,15 @@
 /* Polices page */
 @font-face {
     font-family: 'robotoregular';
-    src: url('Roboto-Regular-webfont.eot');
-    src: url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-Regular-webfont.woff2') format('woff2'),
-         url('Roboto-Regular-webfont.woff') format('woff'),
-         url('Roboto-Regular-webfont.ttf') format('truetype'),
-         url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    src: url('./fonts/roboto/web_fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot');
+    src: url('./fonts/roboto/web_fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/roboto/web_fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('./fonts/roboto/web_fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff') format('woff'),
+         url('./fonts/roboto/web_fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('./fonts/roboto/web_fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-/*
-@font-face {
-    font-family: 'shkrikhand';
-    src: url('./fonts/shrikhand/'Shrikhand-Regular.otf')
-}
-*/
 /* VARIABLES */
 
 /* Couleurs de la Page */
@@ -49,8 +42,9 @@ $font2: 'shrikhand', sans serif;
     border-style: none;
     margin-left: 5px;
     background-color: $colorbackground1;
-    font-weight: bolder;
+    font-weight: bold;
     font-family: $font;
+    font-size: 16px;
     color: $colorfont;
     }
     .mapmarker {
@@ -71,7 +65,8 @@ $font2: 'shrikhand', sans serif;
     
 
     h2{
-        font-family: $font2;
+        font-family: $font;
+        font-size: 20px;
         background-color: $colorbackground2;
     }
 
@@ -113,7 +108,16 @@ $font2: 'shrikhand', sans serif;
     #search {
           
         .mapmarker{
-            margin-left: 40%;
+            margin-left: 35%;
+        }
+    }
+
+    .menu{
+        .button {
+            width:60%;
+            .explorebutton{
+                margin-left: 12%;
+            }
         }
     }
 }
