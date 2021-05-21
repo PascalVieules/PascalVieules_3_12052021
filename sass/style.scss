@@ -111,7 +111,7 @@ $font2: 'shrikhand', sans serif;
         font-family:$font;
         margin-left: 15%;
         font-size: 26px;
-        
+        position: relative;
     }
     .operationnumber{
         background-color: #9356DC;
@@ -128,6 +128,7 @@ $font2: 'shrikhand', sans serif;
         border-radius: 20px;
         padding: 0.5% 2%;
         margin: 10% 2% 2% 5%;
+        align-items: center;
         
         @extend %shadow;
         .titlecard{
@@ -137,9 +138,7 @@ $font2: 'shrikhand', sans serif;
     }
 }
 @media only screen and (max-width: 1024px){
-
     
-
     #search {
           
         .mapmarker{
@@ -178,4 +177,13 @@ $font2: 'shrikhand', sans serif;
             }
         }
     }
+
+   .operation{
+       flex-direction: column;
+       .operationcard{
+           width: 100%;
+           padding: 0;
+           margin: 10px 0;
+       }
+   } 
 }

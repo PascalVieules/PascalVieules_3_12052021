@@ -90,6 +90,7 @@
   font-family: "robotoregular", sans serif;
   margin-left: 15%;
   font-size: 26px;
+  position: relative;
 }
 .operation .operationnumber {
   background-color: #9356DC;
@@ -106,6 +107,7 @@
   border-radius: 20px;
   padding: 0.5% 2%;
   margin: 10% 2% 2% 5%;
+  align-items: center;
 }
 .operation .operationcard .titlecard {
   padding-left: 15%;
@@ -143,6 +145,15 @@
   }
   .menu .button .explorebutton {
     margin-left: 0;
+  }
+
+  .operation {
+    flex-direction: column;
+  }
+  .operation .operationcard {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
   }
 }
 
