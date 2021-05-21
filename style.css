@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Polices page */
 @font-face {
   font-family: "robotoregular";
@@ -9,6 +10,12 @@
 /* VARIABLES */
 /* Couleurs de la Page */
 /* Polices */
+/* Héritage */
+.operation .operationcard, .menu .button {
+  box-shadow: 5px 5px 10px #d3d1d1;
+}
+
+/* Page */
 .logo {
   display: block;
   margin: 10px auto;
@@ -45,8 +52,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*margin-left: auto;
-  margin-right: auto;*/
   width: 100%;
   height: 250px;
   text-align: center;
@@ -78,13 +83,35 @@
   text-decoration: none;
 }
 
-/*
-@media only screen and (min-width: 769px) and (max-width: 1024px){
-    .logo {
-        width: 50%;
-        height: 50%;
-    }
-}*/
+.operation {
+  display: flex;
+}
+.operation .operationtitle {
+  font-family: "robotoregular", sans serif;
+  margin-left: 15%;
+  font-size: 26px;
+}
+.operation .operationnumber {
+  background-color: #9356DC;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 10px;
+  position: absolute;
+}
+.operation .operationcard {
+  width: 25%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  padding: 0.5% 2%;
+  margin: 10% 2% 2% 5%;
+}
+.operation .operationcard .titlecard {
+  padding-left: 15%;
+  font-family: "robotoregular", sans serif;
+}
+
 @media only screen and (max-width: 1024px) {
   #search .mapmarker {
     margin-left: 42%;
