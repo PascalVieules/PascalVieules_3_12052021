@@ -19,6 +19,7 @@ $colortertiary: #99e2d0;
 $colorbackground1: #d3d1d1;
 $colorbackground2: #f2f2f2;
 $colorfont: #000;
+$opacity: 0.7;
 
 /* Polices */
 $font: 'robotoregular', sans serif;
@@ -52,8 +53,8 @@ $font2: 'shrikhand', sans serif;
     border-style: none;
     margin-left: 5px;
     background-color: $colorbackground1;
-    font-weight: bold;
     font-family: $font;
+    opacity: $opacity;
     font-size: 16px;
     color: $colorfont;
     }
@@ -82,6 +83,7 @@ $font2: 'shrikhand', sans serif;
         width: 90%;
         font-family: $font;
         font-size: 16px;
+        opacity: $opacity;
         background-color: $colorbackground2;
         margin: 0 0 45px 0;
     }
@@ -105,36 +107,51 @@ $font2: 'shrikhand', sans serif;
 }
 
 .operation{
-    display: flex;
     
     .operationtitle{
         font-family:$font;
-        margin-left: 15%;
+        margin-left: 10%;
         font-size: 26px;
         position: relative;
     }
+    .select{
+        display: flex;
+        justify-content: center;
+    }
     .operationnumber{
-        background-color: #9356DC;
+        background-color: $colorprimary;
         color: #fff;
         border-radius: 20px;
         padding: 5px 10px;
-        position: absolute;       
+        position: absolute;
+        margin-left: -2.5%;
+        margin-top: 1.1%;       
     }
     .operationcard {
         width: 25%;
         background-color: $colorbackground2;
         display: flex;
         flex-direction: row;
+        text-decoration: none;
         border-radius: 20px;
         padding: 0.5% 2%;
-        margin: 10% 2% 2% 5%;
+        margin: 0 2% 2% 5%;
         align-items: center;
-        
+        &:hover{
+            background-color: $colorbackground1;
+            
+            }
         @extend %shadow;
         .titlecard{
-            padding-left: 15%;
+            padding-left: 1%;
             font-family: $font;
-        }
+            color: black;
+            width: 100%;
+            }
+        .restauranticon {
+            margin: 0 20px;
+            text-align: center;
+            }
     }
 }
 @media only screen and (max-width: 1024px){
@@ -153,6 +170,22 @@ $font2: 'shrikhand', sans serif;
             width:28%;
             
             }
+    }
+    .operation{
+        .operationtitle{
+            font-size:18px;
+            margin-left: 5%;
+        }
+        .operationcard{
+            width: 35%;
+            padding: 0;
+            margin: 12px 15px;
+            font-size: 14px;
+        }
+        .operationnumber{
+            margin-left: -1.5%;
+            margin-top: 1.6%;
+        }
     }
 }
 @media only screen and (max-width: 767px){
@@ -179,11 +212,20 @@ $font2: 'shrikhand', sans serif;
     }
 
    .operation{
-       flex-direction: column;
-       .operationcard{
-           width: 100%;
+        .select{
+            flex-direction: column;
+        }
+        .operationnumber{
+            margin-top: 4.5%;
+        }
+        .operationcard{
+           width: 90%;
            padding: 0;
-           margin: 10px 0;
+           margin: 10px 20px;
+           .titlecard{
+            padding-left: 5%;
+           }
        }
+
    } 
 }
