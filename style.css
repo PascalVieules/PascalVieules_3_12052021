@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Polices page */
 @font-face {
   font-family: "robotoregular";
@@ -9,6 +10,11 @@
 /* VARIABLES */
 /* Couleurs de la Page */
 /* Polices */
+/* Héritage */
+.operation .operationcard {
+  box-shadow: 5px 5px 10px #d3d1d1;
+}
+
 .logo {
   display: block;
   margin: 10px auto;
@@ -78,13 +84,50 @@
   text-decoration: none;
 }
 
-/*
-@media only screen and (min-width: 769px) and (max-width: 1024px){
-    .logo {
-        width: 50%;
-        height: 50%;
-    }
-}*/
+.operation .operationtitle {
+  font-family: "robotoregular", sans serif;
+  margin-left: 10%;
+  font-size: 26px;
+  position: relative;
+}
+.operation .select {
+  display: flex;
+  justify-content: center;
+}
+.operation .operationnumber {
+  background-color: #9356dc;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 10px;
+  position: absolute;
+  margin-left: -2.5%;
+  margin-top: 1.1%;
+}
+.operation .operationcard {
+  width: 25%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 0.5% 2%;
+  margin: 0 2% 2% 5%;
+  align-items: center;
+}
+.operation .operationcard:hover {
+  background-color: #d3d1d1;
+}
+.operation .operationcard .titlecard {
+  padding-left: 1%;
+  font-family: "robotoregular", sans serif;
+  color: black;
+  width: 100%;
+}
+.operation .operationcard .restauranticon {
+  margin: 0 20px;
+  text-align: center;
+}
+
 @media only screen and (max-width: 1024px) {
   #search .mapmarker {
     margin-left: 42%;
@@ -95,6 +138,21 @@
   }
   .menu .button {
     width: 28%;
+  }
+
+  .operation .operationtitle {
+    font-size: 18px;
+    margin-left: 5%;
+  }
+  .operation .operationcard {
+    width: 35%;
+    padding: 0;
+    margin: 12px 15px;
+    font-size: 14px;
+  }
+  .operation .operationnumber {
+    margin-left: -1.5%;
+    margin-top: 1.6%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -116,6 +174,21 @@
   }
   .menu .button .explorebutton {
     margin-left: 0;
+  }
+
+  .operation .select {
+    flex-direction: column;
+  }
+  .operation .operationnumber {
+    margin-top: 4.5%;
+  }
+  .operation .operationcard {
+    width: 90%;
+    padding: 0;
+    margin: 10px 20px;
+  }
+  .operation .operationcard .titlecard {
+    padding-left: 5%;
   }
 }
 
