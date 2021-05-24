@@ -19,6 +19,7 @@ $colortertiary: #99e2d0;
 $colorbackground1: #d3d1d1;
 $colorbackground2: #f2f2f2;
 $colorfont: #000;
+$white:#fff;
 $opacity: 0.7;
 
 /* Polices */
@@ -139,7 +140,9 @@ $font2: 'shrikhand', sans serif;
         align-items: center;
         &:hover{
             background-color: $colorbackground1;
-            
+            .restauranticon{
+                color: $colorprimary;
+            }
             }
         @extend %shadow;
         .titlecard{
@@ -153,6 +156,96 @@ $font2: 'shrikhand', sans serif;
             text-align: center;
             }
     }
+}
+.restaurant{
+    background-color: $colorbackground2;
+    font-family: $font;
+    margin: 2% 0;
+    padding-bottom:4%;
+    .cards{
+        margin: 0 5%;
+        display:flex;
+        flex-direction: row;
+    }
+    .new{
+        background-color: $colortertiary;
+        color: #2c9c81;
+        font-weight: bold;
+        padding: 3px 10px;
+        position: absolute;
+        right: 10px;
+        top:10px;
+    }
+    .titlesection{
+        padding: 15px 0 15px 15px;
+        margin-left:10%;
+        width: 100%;
+        font-size: 26px;
+    }
+    figure{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        display: block;
+    }
+    .restaurantcard{
+        display:flex;
+        flex-direction: row;
+        width: 28%;
+        height: 250px;
+        margin: 10px 5px;
+        border-radius: 20px;
+        background-color: $white;
+        text-decoration: none;
+        flex-direction: column;
+        position:relative;
+        @extend%shadow;
+        .restaurants{
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width: 100%;
+            height: 75%;
+            margin: -5% -12.5%;
+            object-fit: cover;
+        }
+        figcaption{
+            display: flex;
+            color: black;
+            margin: -5% -12.5%;
+            .legend{
+                display:flex;
+                flex-direction: column;
+                margin: 4px 40% 2px 10px;
+                padding-top: 20px;
+                font-size: 14px;
+                h3{
+                    margin-top: 5%;
+                    margin-bottom: 5%;
+                }
+                .location{
+                    opacity: $opacity;
+                    margin-top: 0.5%;
+                    }
+                }
+            
+            .heart{
+            display: flex;
+            margin-top: 12%;
+            opacity:$opacity;
+            position: relative;
+            font-size: 25px;
+            &:hover{
+                opacity:0;
+            }
+            &::after{
+                position: absolute;
+                color: $colorprimary;
+            }
+            }
+        }
+    }
+    
 }
 @media only screen and (max-width: 1024px){
     
