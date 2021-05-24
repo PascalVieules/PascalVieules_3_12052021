@@ -245,6 +245,27 @@
     margin-left: -1.5%;
     margin-top: 1.6%;
   }
+
+  .restaurant .cards {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .restaurant .titlesection {
+    font-size: 18px;
+    margin-left: 5%;
+    padding-left: 0;
+  }
+  .restaurant .restaurantcard {
+    width: 45%;
+  }
+  .restaurant .restaurantcard .restaurants {
+    margin: -10% -13%;
+    height: 180px;
+  }
+  .restaurant .restaurantcard figcaption {
+    margin: -0.5% -14%;
+    padding-top: 3%;
+  }
 }
 @media only screen and (max-width: 767px) {
   .logo {
@@ -280,6 +301,19 @@
   }
   .operation .operationcard .titlecard {
     padding-left: 5%;
+  }
+
+  .restaurant .cards {
+    flex-direction: column;
+  }
+  .restaurant .restaurantcard {
+    width: 100%;
+  }
+  .restaurant .restaurantcard .restaurants {
+    margin: -5% -11.2%;
+  }
+  .restaurant .restaurantcard figcaption .legend {
+    margin-top: 10px;
   }
 }
 
