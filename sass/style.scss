@@ -135,7 +135,9 @@ $font2: 'shrikhand', sans serif;
         align-items: center;
         &:hover{
             background-color: $colorbackground1;
-            
+            .restauranticon{
+                color: $colorprimary;
+            }
             }
         @extend %shadow;
         .titlecard{
@@ -155,6 +157,11 @@ $font2: 'shrikhand', sans serif;
     background-color: $colorbackground2;
     font-family: $font;
     margin: 20px 0;
+    .cards{
+        margin: 0 5%;
+        display:flex;
+        flex-direction: row;
+    }
     .new{
         background-color: $colortertiary;
         color: #2c9c81;
@@ -166,7 +173,9 @@ $font2: 'shrikhand', sans serif;
     }
     .titlesection{
         padding: 15px 0 15px 15px;
+        margin-left:10%;
         width: 100%;
+        font-size: 26px;
     }
     figure{
         width: 100%;
@@ -180,8 +189,7 @@ $font2: 'shrikhand', sans serif;
         flex-direction: row;
         width: 28%;
         height: 250px;
-        margin: 15px 15px;
-        padding: 5px;
+        margin: 10px 5px;
         border-radius: 20px;
         background-color: $white;
         text-decoration: none;
@@ -192,32 +200,35 @@ $font2: 'shrikhand', sans serif;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             width: 100%;
-            height: 80%;
-            margin: -10% -5%;
+            height: 75%;
+            margin: -5% -12.5%;
             object-fit: cover;
         }
         figcaption{
             display: flex;
-            flex-direction: row;
             color: black;
+            margin: -5% -12.5%;
             .legend{
                 display:flex;
                 flex-direction: column;
-                margin: 7px 0 2px 5px;
+                margin: 4px 40% 2px 5px;
                 padding-top: 20px;
                 font-size: 14px;
+                h3{
+                    margin-top: 5%;
+                    margin-bottom: 5%;
                 }
-            .location{
-            opacity: $opacity;
-            margin-top: 0.5%;
-            }
+                .location{
+                    opacity: $opacity;
+                    margin-top: 0.5%;
+                    }
+                }
+            
             .heart{
             display: flex;
-            margin-top: 15%;
-            margin-left: 40%;
+            margin-top: 12%;
             opacity:$opacity;
             font-size: 25px;
-            
             }
         }
     }
