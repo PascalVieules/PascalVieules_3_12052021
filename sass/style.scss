@@ -32,7 +32,10 @@ $font2: 'shrikhand', sans serif;
 }
 
 /* Page */
-
+body{
+    max-width: 100%;
+    margin: 0;
+}
 .logo {
     display: block;
     margin: 10px auto;
@@ -95,7 +98,7 @@ $font2: 'shrikhand', sans serif;
         width: 20%;
         height: 100px;
         border-radius: 35px;
-        padding: 17px 5px;
+        padding: 19px 5px;
         margin-bottom: 63px;
         @extend %shadow;
         .explorebutton{
@@ -267,6 +270,7 @@ $font2: 'shrikhand', sans serif;
             }
     }
     .operation{
+        margin-left: 1%;
         .operationtitle{
             font-size:18px;
             margin-left: 5%;
@@ -392,7 +396,7 @@ $font2: 'shrikhand', sans serif;
            width:100%;
            .restaurants{
                margin: -5% -10.75%;
-               padding-left: 35px;
+               
            }
            figcaption{
                .legend{

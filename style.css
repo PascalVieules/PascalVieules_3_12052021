@@ -16,6 +16,11 @@
 }
 
 /* Page */
+body {
+  max-width: 100%;
+  margin: 0;
+}
+
 .logo {
   display: block;
   margin: 10px auto;
@@ -75,7 +80,7 @@
   width: 20%;
   height: 100px;
   border-radius: 35px;
-  padding: 17px 5px;
+  padding: 19px 5px;
   margin-bottom: 63px;
 }
 .menu .button .explorebutton {
@@ -233,6 +238,9 @@
     width: 28%;
   }
 
+  .operation {
+    margin-left: 1%;
+  }
   .operation .operationtitle {
     font-size: 18px;
     margin-left: 5%;
@@ -346,7 +354,6 @@
   }
   .restaurant .restaurantcard .restaurants {
     margin: -5% -10.75%;
-    padding-left: 35px;
   }
   .restaurant .restaurantcard figcaption .legend {
     margin-top: 10px;
