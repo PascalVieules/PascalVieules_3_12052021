@@ -211,6 +211,7 @@ $font2: 'shrikhand', sans serif;
         }
         figcaption{
             display: flex;
+            justify-content:flex-start;
             color: black;
             margin: -5% -12.5%;
             .legend{
@@ -235,6 +236,7 @@ $font2: 'shrikhand', sans serif;
             opacity:$opacity;
             position: relative;
             font-size: 25px;
+            margin-left: -5%;
             &:hover{
                 opacity:0;
             }
@@ -299,6 +301,9 @@ $font2: 'shrikhand', sans serif;
             figcaption{
                 margin: -0.5% -14%;
                 padding-top: 3%;
+                .heart{
+                    margin-left:-8%;
+                }
             }
         }
     }
@@ -355,6 +360,11 @@ $font2: 'shrikhand', sans serif;
            figcaption{
                .legend{
                    margin-top:10px;
+                   padding-left: 2%;
+                   padding-top: 0.5px;
+               }
+               .heart{
+                   margin-top: 5%;
                }
            }
        }
