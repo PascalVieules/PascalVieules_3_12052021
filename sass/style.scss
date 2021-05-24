@@ -280,6 +280,28 @@ $font2: 'shrikhand', sans serif;
             margin-top: 1.6%;
         }
     }
+    .restaurant{
+        .cards{
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .titlesection{
+            font-size:18px;
+            margin-left: 5%;
+            padding-left:0;  
+        }
+        .restaurantcard{
+            width: 45%;
+            .restaurants{
+                margin: -10% -13%;
+                height: 180px; 
+            }
+            figcaption{
+                margin: -0.5% -14%;
+                padding-top: 3%;
+            }
+        }
+    }
 }
 @media only screen and (max-width: 767px){
     .logo{
@@ -321,4 +343,20 @@ $font2: 'shrikhand', sans serif;
        }
 
    } 
+   .restaurant{
+       .cards{
+           flex-direction: column;
+       }
+       .restaurantcard{
+           width:100%;
+           .restaurants{
+               margin: -5% -11.2%;
+           }
+           figcaption{
+               .legend{
+                   margin-top:10px;
+               }
+           }
+       }
+   }
 }
