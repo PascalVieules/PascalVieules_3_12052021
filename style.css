@@ -186,6 +186,7 @@
 }
 .restaurant .restaurantcard figcaption {
   display: flex;
+  justify-content: flex-start;
   color: black;
   margin: -5% -12.5%;
 }
@@ -210,6 +211,7 @@
   opacity: 0.7;
   position: relative;
   font-size: 25px;
+  margin-left: -5%;
 }
 .restaurant .restaurantcard figcaption .heart:hover {
   opacity: 0;
@@ -266,6 +268,9 @@
     margin: -0.5% -14%;
     padding-top: 3%;
   }
+  .restaurant .restaurantcard figcaption .heart {
+    margin-left: -8%;
+  }
 }
 @media only screen and (max-width: 767px) {
   .logo {
@@ -314,6 +319,11 @@
   }
   .restaurant .restaurantcard figcaption .legend {
     margin-top: 10px;
+    padding-left: 2%;
+    padding-top: 0.5px;
+  }
+  .restaurant .restaurantcard figcaption .heart {
+    margin-top: 5%;
   }
 }
 
